@@ -1,6 +1,5 @@
 import mysql.connector
-from composer import TGAPI, SQL_init as init, TGChatId
-from composer import Chain
+from composer import Chain, TGAPI, SQL_init as init, TGChatId
 import requests
 import json
 import asyncio
@@ -10,6 +9,8 @@ import time
 
 def check_stage(url, stage, table, message) -> None:
     bot = telebot.TeleBot(TGAPI.Xenon().api_key)
+
+    logging.basicConfig(filename='/home/kayo/projects/gov/gov_main/log.log', encoding='utf-8', level=logging.DEBUG)
 
     db = mysql.connector.connect(
         host=init.InjDB().host,
@@ -29,8 +30,6 @@ def check_stage(url, stage, table, message) -> None:
 
     try:
         diff = int(data["proposals"][0]["proposal_id"]) - myresult[0]
-        print(int(data["proposals"][0]["proposal_id"]))
-        print(diff)
         for i in range(diff):
             if int(data["proposals"][i]["proposal_id"]) > myresult[0]:
                 prop_id = int(data["proposals"][i]["proposal_id"])
@@ -41,8 +40,9 @@ def check_stage(url, stage, table, message) -> None:
                 cur_proposal = data["proposals"][i]["content"]["description"]
                 msg_edit = cur_proposal.replace(r"\n", "\n")
                 bot.send_message(chat_id=TGChatId.test().chat_id, text=f"🔊Proposal {prop_id} has just {message}!\n\n{msg_edit}\n\nMore information on: https://hub.injective.network/governance/")
+                logging.info(f"{prop_id} has been inserted into table {table}")
     except IndexError as e:
-        print("no proposals in deposit stage")
+        print("No new proposals from call")
 
 if __name__ == "__main__":
-    asyncio.run(check_stage(Chain.CheckApprovedProps().url, Chain.CheckApprovedProps().status, "app_stage"))
+    check_stage(Chain.CheckApprovedProps().url, Chain.CheckApprovedProps().status, "app_stage", "been approved!")
