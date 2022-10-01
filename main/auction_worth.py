@@ -56,6 +56,6 @@ async def main() -> None:
     sum = 0
     for i in range(len(name)):
         sum = sum + await get_price(name[i][1]) * name[i][2]
-    print(f"Total basket for round {round_now} ${round(sum, 2)}", time.time() - start_time)
-    bot.send_message(chat_id=-606157239, text=f"🔊Round {round_now} has just begun with a total basket value of:\n${round(sum, 2)}\n\nAssets:\n{name[0][1]}\n{name[1][1]}\n\nWHERE IS PEPE?")
+    bot.send_message(chat_id=-606157239, text=f"🔊Round {round_now} of the Injective Auction has just begun with a total basket value of ${round(sum, 2)}\n\nAssets: {name[1][1]}, {name[0][1]}\n\nWHERE IS PEPE?\n\nMore information at:\nhttps://hub.injective.network/auction/")
+    
 asyncio.run(main())
