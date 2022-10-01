@@ -1,0 +1,32 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=3&pagination.reverse=true HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=3&pagination.reverse=true HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=3&pagination.reverse=true HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=1 HTTP/1.1" 200 86
+INFO:root:No new proposals to add in dep_stage
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=3&pagination.reverse=true HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=4&pagination.reverse=true HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=1 HTTP/1.1" 200 86
+INFO:root:No new proposals to add in dep_stage
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=3&pagination.reverse=true HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=4&pagination.reverse=true HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=1 HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=2 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=3&pagination.reverse=true HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lcd.injective.network:443
+DEBUG:urllib3.connectionpool:https://lcd.injective.network:443 "GET /cosmos/gov/v1beta1/proposals?proposal_status=4&pagination.reverse=true HTTP/1.1" 200 None
