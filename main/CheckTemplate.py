@@ -10,7 +10,7 @@ import time
 def check_stage(url, stage, table, message) -> None:
     bot = telebot.TeleBot(TGAPI.Xenon().api_key)
 
-    logging.basicConfig(filename='/home/kayo/projects/gov/gov_main/log.log', encoding='utf-8', level=logging.DEBUG)
+    logging.basicConfig(filename='log.log', encoding='utf-8', level=logging.DEBUG)
 
     db = mysql.connector.connect(
         host=init.InjDB().host,
